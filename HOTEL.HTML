@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morskaya Feeria | Hôtel en bord de mer</title>
+<meta name="description" content="Découvrez nos appartements, piscines et services pour vos vacances au bord de la mer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--g:#C7AA70;--gd:#A88A50;--b:#003C4B;--soft:#F5F1E8;--t:#4A4A46;--tl:#99958C;--br:#E5DFD2}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font:400 15px/1.7 Montserrat,sans-serif;color:var(--t);background:#fff}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--b);line-height:1.15}
+h2{font-size:clamp(32px,4vw,48px);margin-bottom:16px}h3{font-size:26px}
+a{color:inherit;text-decoration:none}.w{max-width:1200px;margin:auto;padding:0 20px}
+section{padding:100px 0}.soft{background:var(--soft)}
+.btn{display:inline-block;padding:13px 30px;border:1px solid var(--gd);background:var(--gd);color:#fff;cursor:pointer;font:500 13px Montserrat;letter-spacing:.06em;transition:.25s}
+.btn:hover{background:var(--b);border-color:var(--b)}.btn.o{background:transparent;color:#fff;border-color:#fff}.btn.o:hover{background:#fff;color:var(--b)}
+.btn.d{background:transparent;color:var(--gd)}.btn.d:hover{background:var(--gd);color:#fff}
+.btn[disabled]{opacity:.5;cursor:wait}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--br)}
+header .w{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:80px}
+.logo{font:600 26px 'Cormorant Garamond';color:var(--b);text-align:center}.logo img{height:46px;vertical-align:middle}
+nav{display:flex;gap:22px;font-size:13px}nav a:hover{color:var(--gd)}
+.hr{justify-self:end}#bt{display:none;background:none;border:0;font-size:26px;color:var(--b)}
+.hero{position:relative;height:650px;display:flex;align-items:center;color:#fff;background:var(--b) url(assets/hotel-cover.jpg) center/cover}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:rgba(0,30,45,.48)}
+.hero .w{position:relative;z-index:2}.hero h1{color:#fff;font-size:clamp(40px,6vw,72px)}.hero p{margin:10px 0 24px;max-width:520px}
+.hero .btn+.btn{margin-left:10px}
+.search{position:relative;z-index:3;max-width:1100px;margin:-50px auto 0;background:#fff;padding:20px;display:grid;grid-template-columns:repeat(5,1fr) auto;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+label{font-size:12px;color:var(--tl);display:block}
+input,select,textarea{width:100%;padding:11px;border:1px solid var(--br);font:inherit;background:#fff;border-radius:0}
+input:focus,select:focus,textarea:focus,.btn:focus-visible{outline:2px solid var(--g)}
+.trust{background:var(--b);color:#fff;padding:22px 0;margin-top:0}.trust .w{display:flex;justify-content:space-around;flex-wrap:wrap;gap:14px}
+.trust span{display:flex;gap:10px;align-items:center}.ic{width:22px;height:22px;stroke:var(--g);fill:none;stroke-width:1.3}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.two img,.card img,.g img{width:100%;display:block;object-fit:cover;background:var(--br);aspect-ratio:4/3}
+.two.r .im{order:2}ul.f{list-style:none;margin-top:16px}ul.f li:before{content:"— ";color:var(--gd)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;margin-top:40px}.grid4 div{padding:26px 10px;border:1px solid var(--br)}.grid4 svg{margin-bottom:10px}
+.apts{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:40px 0}.card h3{margin:16px 0 4px}.card small{color:var(--tl)}.card .a{display:flex;gap:10px;margin-top:14px}
+.g{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.g img{aspect-ratio:1;cursor:pointer;transition:.3s}.g img:hover{opacity:.85}
+.rev{text-align:center;max-width:720px;margin:30px auto 0;min-height:150px}.rev q{font:500 28px/1.3 'Cormorant Garamond';color:var(--b);display:block}.stars{color:var(--g);letter-spacing:4px}
+.nav2{display:flex;justify-content:center;gap:14px;margin-top:20px}.nav2 button{border:1px solid var(--gd);background:none;width:42px;height:42px;cursor:pointer;color:var(--gd)}
+form.f{display:grid;gap:14px;max-width:720px}form.f .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.msg{padding:14px;border:1px solid;margin-top:6px;display:none}.msg.ok{display:block;border-color:#2e7d32;color:#2e7d32}.msg.er{display:block;border-color:#b3261e;color:#b3261e}
+iframe{width:100%;height:380px;border:0}.mapph{height:380px;background:var(--soft);display:grid;place-items:center;color:var(--tl);text-align:center;padding:20px}
+footer{background:var(--soft);padding:70px 0 30px;font-size:14px}footer .c{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}footer h3{font-size:22px}footer a{display:block;color:var(--t)}footer a:hover{color:var(--gd)}
+.leg{border-top:1px solid var(--br);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+#lb{position:fixed;inset:0;background:rgba(0,20,30,.92);display:none;place-items:center;z-index:99}#lb.on{display:grid}#lb img{max-width:90vw;max-height:85vh}#lb button{position:absolute;color:#fff;background:none;border:0;font-size:40px;cursor:pointer}
+.pr{margin:6px 0;color:var(--gd)}.recap{padding:14px;background:var(--soft);border-left:3px solid var(--gd);min-height:0}.recap:empty{display:none}.np{font-size:12px;color:var(--tl)}
+details{border-bottom:1px solid var(--br);padding:14px 0}summary{cursor:pointer;font-weight:500;color:var(--b)}details p{margin-top:8px}
+@media(max-width:900px){nav{display:none;position:absolute;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--br)}nav.on{display:flex}#bt{display:block}
+.search{grid-template-columns:1fr 1fr;margin:20px}.two,.apts,footer .c{grid-template-columns:1fr}.two.r .im{order:0}.grid4,.g{grid-template-columns:1fr 1fr}section{padding:60px 0}form.f .row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+[hidden]{display:none!important}nav{gap:18px}nav a[aria-current]{color:var(--gd)}
+.ph{background:var(--b);color:#fff;padding:56px 0}.ph h1{color:#fff;font-size:clamp(34px,5vw,56px)}.ph p{opacity:.85}
+.tile{display:block;padding:30px 20px;border:1px solid var(--br);text-align:center;transition:.25s}.tile:hover{border-color:var(--gd);background:var(--soft)}.tile h3{margin-bottom:6px}
+
+/* Design v2 (maquette) */
+html{scroll-padding-top:110px}body{font-size:13px;color:#6b6a66}section{padding:80px 0}
+h2{color:var(--g);font-size:clamp(28px,3.4vw,38px);letter-spacing:.02em;margin-bottom:22px}h2:after{content:"";display:block;width:44px;height:1px;background:var(--g);margin-top:14px}h2[style*=center]:after{margin-inline:auto}
+header{background:#f1f1ef;border:0}header .w{display:flex;justify-content:center;height:64px;position:relative;padding:0}
+nav{display:flex;align-items:center;justify-content:center;gap:34px;font-size:12px;letter-spacing:.04em;width:100%}nav>a{color:var(--b)}
+.logo{font:600 21px/1.1 'Cormorant Garamond';letter-spacing:.12em;text-transform:uppercase;color:var(--gd);text-align:center}.logo small{display:block;font:400 8px Montserrat;letter-spacing:.22em;color:var(--tl);margin-top:3px}
+nav .logo{background:#fff;border-inline:1px solid var(--br);height:64px;padding:0 40px;margin:0 10px;display:flex;flex-direction:column;justify-content:center}.logo.m{display:none}
+.strip{background:var(--b);color:#fff;font-size:12px}.strip .w{display:flex;gap:34px;justify-content:center;padding:9px 20px;flex-wrap:wrap;height:auto}.strip a:hover{color:var(--g)}
+.hero{height:600px;text-align:center}.hero h1{letter-spacing:.06em}.hero h3{color:var(--g)!important;font-style:italic;font-size:24px;margin-top:8px}.hero p{margin:10px auto 24px}
+.search{margin:-60px auto -60px;padding:28px 24px 22px;box-shadow:0 6px 24px rgba(0,0,0,.18)}.search:before{content:"Séjour";position:absolute;top:-22px;left:0;background:var(--gd);color:#fff;padding:0 18px;font-size:11px;line-height:22px}
+label{text-transform:uppercase;letter-spacing:.06em;font-size:10px;color:var(--gd)}.trust{padding:88px 0 24px;margin-top:0!important}
+.grid4{gap:34px 20px;margin-top:40px}.grid4 div{border:0;padding:0;font-size:12px;font-weight:500;color:var(--b)}.grid4 br{display:none}
+.grid4 svg{width:64px;height:64px;padding:17px;border:1px solid var(--g);border-radius:50%;display:block;margin:0 auto 12px}
+.im2{position:relative}.im2:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,20,30,.55))}
+.im2 h3{position:absolute;z-index:2;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;color:#fff;font-size:34px;letter-spacing:.04em;margin:0}
+.cta{display:flex;align-items:center;gap:24px;justify-content:center;margin:10px auto 0}.cta:before,.cta:after{content:"";flex:1;height:1px;background:var(--br)}
+.rev.cards{max-width:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:left;min-height:0}.rev.cards article{border:1px solid var(--g);padding:26px}
+.rev.cards h4{color:var(--b);font-size:13px;font-weight:600}.rev.cards p{font-size:12px;margin:10px 0 18px}.rev.cards .src{font-size:11px;color:var(--tl)}.rev.cards .stars{letter-spacing:3px;font-size:13px}
+#location{background:var(--g);color:#fff;padding:50px 0 0}#location h2{color:#fff}#location h2:after{background:#fff}
+#location .lc{display:flex;gap:34px;flex-wrap:wrap;align-items:center;padding-bottom:36px}#location .lc a:last-child{margin-left:auto;text-decoration:underline}#map{width:100%}
+#contact{background:var(--soft) url(assets/contact-bg.jpg) center bottom/cover;padding-bottom:0}#contact form.f{max-width:none;background:#F0E6D3;padding:34px;margin:20px 0 60px}
+footer{background:var(--b);color:#cfd6d8;padding:0;font-size:12px}footer .c{grid-template-columns:1.1fr 1.4fr 1fr 1fr;gap:0}footer .c>div{padding:36px 28px;border-left:1px solid rgba(255,255,255,.12)}
+footer .c>div:first-child{background:#002c38;border:0;display:grid;place-items:center}footer h3{font:500 11px Montserrat;letter-spacing:.14em;text-transform:uppercase;color:var(--g);margin-bottom:12px}
+footer a{color:#e8e4d8;padding:3px 0}footer .btn{color:#fff;margin-top:14px;display:inline-block}footer .leg{margin:0;border-top:1px solid rgba(255,255,255,.12);padding:16px 28px;color:#9fb1b6}
+.ph{padding:48px 0}
+@media(max-width:900px){#bt{display:block;position:absolute;right:0;top:0;width:64px;height:64px;background:var(--b);color:#fff}header .w{justify-content:flex-start;padding-left:20px}.logo.m{display:block;font-size:18px}
+nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:14px;align-items:flex-start;z-index:60}nav.on{display:flex}nav .logo{display:none}
+.rev.cards,footer .c{grid-template-columns:1fr}#location .lc a:last-child{margin-left:0}.hero{height:520px}.strip .w{gap:6px 18px;justify-content:flex-start}.search{margin:-40px 20px -40px}}
+
+.page{display:none}.page.on{display:block}
+</style></head><body>
+<header><div class="w"><a class="logo m" href="#/accueil">Morskaya Feeria</a><button id="bt" aria-label="Menu">☰</button>
+<nav id="nav"><a href="#/accueil">Accueil</a><a href="#/visite">Visite</a><a href="#/reservation">Réservation</a><a class="logo" href="#/accueil"><span>Morskaya Feeria</span><small>Complexe hôtelier</small></a><a href="#/infos">Infos</a><a href="#/contact">Contact</a><a href="#/connexion">Connexion</a></nav></div>
+<div class="strip"><div class="w"><a id="sa" href="#/contact">Adresse</a><a id="sp" href="#/contact">Téléphone</a><a id="se" href="#/contact">E-mail</a></div></div></header>
+<main>
+<div class="page" id="p-accueil">
+<div class="hero"><video autoplay muted loop playsinline poster="assets/hotel-cover.jpg" onerror="this.remove()"><source src="assets/hotel-hero.mp4" type="video/mp4"></video>
+<div class="w"><h1>Hôtel en bord de mer</h1><h3 style="color:#fff">Un lieu où le bonheur devient réalité</h3><p>Profitez d'un séjour exceptionnel au bord de la mer.</p>
+<a class="btn" href="#/reservation">Réserver</a><a class="btn o" href="#/visite">Découvrir le complexe</a></div></div>
+<form class="search" id="sf"><div><label>Arrivée</label><input type="date" name="check_in" required></div><div><label>Départ</label><input type="date" name="check_out" required></div>
+<div><label>Adultes</label><input type="number" name="adults" min="1" value="2"></div><div><label>Enfants</label><input type="number" name="children" min="0" value="0"></div>
+<div><label>Chambres</label><input type="number" name="rooms" min="1" value="1"></div><button class="btn" style="align-self:end">Rechercher</button></form>
+
+<div class="trust" style="margin-top:50px"><div class="w"><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Acompte à la réservation</span>
+<span><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.400 2.900 1-6.100L3.200 9.500l6.100-.9z"/></svg>Confort et qualité</span>
+<span><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8 14l-1 7 5-3 5 3-1-7"/></svg>Avis clients : 9.2</span></div></div>
+
+<section id="about"><div class="w two"><div class="im"><img loading="lazy" src="assets/family-pool.jpg" alt="Piscine"></div><div>
+<p style="color:var(--gd)">Sébastopol</p><h2>Bienvenue à Morskaya Feeria</h2>
+<p>Découvrez un complexe de vacances au bord de la mer, idéal pour les familles et les couples. Profitez des appartements, des piscines et des espaces de détente.</p>
+<ul class="f"><li>Séjour en bord de mer</li><li>Appartements équipés</li><li>Piscines et loisirs</li><li>Wi-Fi</li><li>Environnement familial</li></ul></div></div></section>
+<section id="advantages"><div class="w"><h2 style="text-align:center">Pourquoi nous choisir</h2><div class="grid4" id="adv"></div></div></section>
+<section id="decouvrir"><div class="w"><h2 style="text-align:center">Explorer le site</h2><div class="grid4" style="margin-top:30px">
+<a class="tile" href="#/chambres"><h3>Chambres</h3>Appartements et tarifs</a><a class="tile" href="#/visite"><h3>Visite</h3>Restaurant, piscines, galerie</a>
+<a class="tile" href="#/infos"><h3>Infos et FAQ</h3>Règlement, questions</a><a class="tile" href="#/contact"><h3>Contact</h3>Adresse et message</a></div></div></section>
+<section id="reviews"><div class="w"><h2 style="text-align:center">Ce que disent nos clients</h2><div class="rev" id="rev" aria-live="polite"></div>
+<div class="nav2"><button id="rp" aria-label="Précédent">‹</button><button id="rn" aria-label="Suivant">›</button></div></div></section>
+<div class="w cta"><a class="btn" href="#/reservation">Réserver</a></div>
+</div>
+<div class="page" id="p-chambres">
+<div class="ph"><div class="w"><h1>Chambres et tarifs</h1><p>Appartements équipés, capacité et prix par nuit.</p></div></div>
+<section id="apartments"><div class="w"><h2>Appartements</h2><p>Des logements confortables pour vos vacances en famille, en couple ou entre amis.</p>
+<div class="apts" id="apts"></div><div class="cta"><a class="btn" href="#/reservation">Réserver</a></div></div></section>
+</div>
+<div class="page" id="p-visite">
+<div class="ph"><div class="w"><h1>Visite de l'hôtel</h1><p>Appartements, tarifs, restaurant, piscines et galerie.</p></div></div>
+<section id="restaurant"><div class="w two"><div><h2>Restaurant</h2><p>Un espace convivial pour vos repas, réceptions et événements privés.</p><br><a class="btn d" href="#/contact">En savoir plus</a></div><div><img loading="lazy" src="assets/restaurant.jpg" alt="Restaurant"></div></div></section>
+<section id="bathhouse"><div class="w two r"><div class="im"><img loading="lazy" src="assets/bathhouse.jpg" alt="Bain russe"></div><div><h2>Bain russe</h2><p>Un espace de détente pour profiter d'un moment de bien-être.</p><br><a class="btn d" href="#/contact">En savoir plus</a></div></div></section>
+<section id="facilities"><div class="w"><h2>Plage et piscines</h2><p>Des espaces de baignade et de détente pour petits et grands.</p>
+<div class="g" id="fg"></div></div></section>
+<section id="social"><div class="w"><h2>#mfeeria</h2><p>Suivez-nous <a id="ig" href="#" style="color:var(--gd)">sur Instagram</a></p><div class="g" id="sg"></div></div></section>
+<section id="gallery"><div class="w"><h2>Galerie</h2><div class="g" id="gg"></div><br><button class="btn d" id="all">Voir tout</button></div></section><div class="w cta"><a class="btn" href="#/reservation">Réserver</a></div>
+</div>
+<div class="page" id="p-reservation">
+<div class="ph"><div class="w"><h1>Réservation</h1><p>Vérifiez les disponibilités et réservez votre séjour.</p></div></div>
+<section id="booking"><div class="w"><h2>Réserver votre séjour</h2><p id="bi"></p><br>
+<form class="f" id="bf" novalidate>
+<div class="row"><div><label>Arrivée</label><input type="date" name="check_in" required></div><div><label>Départ</label><input type="date" name="check_out" required></div></div>
+<div class="row"><div><label>Adultes</label><input type="number" name="adults" min="1" max="10" value="2"></div><div><label>Enfants</label><input type="number" name="children" min="0" max="10" value="0"></div></div>
+<div class="row"><div><label>Chambres</label><input type="number" name="rooms" min="1" max="5" value="1"></div><div><label>Appartement</label><select name="apartment" required></select></div></div>
+<div class="recap" id="rc" aria-live="polite"></div>
+<div class="row"><div><label>Nom</label><input name="name" required maxlength="100" autocomplete="name"></div><div><label>Téléphone</label><input name="phone" type="tel" required autocomplete="tel"></div></div>
+<div><label>E-mail</label><input name="email" type="email" required autocomplete="email"></div>
+<div><label>Demandes particulières</label><textarea name="requests" rows="3" maxlength="1000"></textarea></div>
+<label><input type="checkbox" name="consent" style="width:auto" required> J'accepte la <a href="#/infos" style="text-decoration:underline">politique de confidentialité</a></label><p class="np">Données utilisées uniquement pour traiter votre demande ; accès, correction et suppression sur simple demande.</p>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<div style="display:flex;gap:12px;flex-wrap:wrap"><button type="button" class="btn d" id="chk">Vérifier les disponibilités</button><button class="btn" id="bs">Envoyer la demande</button></div>
+<div class="msg" id="bm" role="status"></div></form></div></section>
+</div>
+<div class="page" id="p-infos">
+<div class="ph"><div class="w"><h1>Informations</h1><p>Règlement intérieur, services et questions fréquentes.</p></div></div>
+<section id="infos"><div class="w two"><div><h2>Informations et services</h2><p>Tout ce qu'il faut savoir avant votre séjour.</p><h3 style="margin-top:20px">Règlement intérieur</h3>
+<ul class="f" id="rules"></ul></div><div><h3>Questions fréquentes</h3>
+<details><summary>Comment réserver ?</summary><p>Choisissez vos dates et un logement : la disponibilité est vérifiée, le montant et l'acompte sont calculés automatiquement.</p></details>
+<details><summary>Quand l'acompte est-il dû ?</summary><p class="x-dep"></p></details>
+<details><summary>Puis-je annuler ?</summary><p>Oui, avant la date d'arrivée. Les conditions de remboursement de l'acompte sont fixées par l'hôtel.</p></details>
+<details><summary>Le paiement est-il réel ?</summary><p>Dans cette version de démonstration, le paiement est simulé : aucune donnée bancaire ni Mobile Money n'est collectée.</p></details>
+<details><summary>Comment sont utilisées mes données ?</summary><p>Uniquement pour traiter votre demande. Vous pouvez demander leur consultation, correction ou suppression en nous écrivant.</p></details></div></div></section>
+</div>
+<div class="page" id="p-contact">
+<div class="ph"><div class="w"><h1>Contact et localisation</h1><p>Une question ? Écrivez-nous ou venez nous voir.</p></div></div>
+<section id="contact"><div class="w"><h2>Poser une question</h2><p>Vous avez une question ? Contactez-nous.</p><br>
+<form class="f" id="cf"><div class="row"><div><label>Nom</label><input name="name" required></div><div><label>E-mail</label><input name="email" type="email" required></div></div>
+<div class="row"><div><label>Téléphone</label><input name="phone" type="tel"></div><div><label>Sujet</label><select name="subject"><option>Renseignement</option><option>Réservation</option><option>Restaurant / événement</option><option>Autre</option></select></div></div><div><label>Votre message</label><textarea name="message" rows="5" required minlength="5"></textarea></div>
+<label><input type="checkbox" name="consent" style="width:auto" required> J'accepte la <a href="#/infos" style="text-decoration:underline">politique de confidentialité</a></label><p class="np">Données utilisées uniquement pour répondre à votre message.</p>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<div><button class="btn">Envoyer</button></div><div class="msg" id="cm" role="status"></div></form></div></section><section id="location"><div class="w"><h2>Comment nous trouver</h2><div class="lc"><span id="addr"></span><a id="lph"></a><a id="lem"></a><a id="dir" href="#">Itinéraire sur la carte</a></div></div><div id="map"></div></section>
+</div>
+<div class="page" id="p-connexion">
+<div class="ph"><div class="w"><h1>Mon compte</h1><p>Connectez-vous ou créez votre compte client.</p></div></div>
+<section id="compte"><div class="w two" style="align-items:start"><div><h2>Se connecter</h2><br>
+<form class="f" id="lgf"><div><label>E-mail</label><input name="email" type="email" required autocomplete="email"></div><div><label>Mot de passe</label><input name="password" type="password" required autocomplete="current-password"></div>
+<div><button class="btn">Connexion</button></div><div class="msg" id="lgm" role="status"></div></form>
+<div id="who" hidden><p id="wm"></p><br><a class="btn" href="#/reservation">Réserver</a> <button class="btn d" id="out">Se déconnecter</button></div></div>
+<div><h2>Créer un compte</h2><br><form class="f" id="rgf"><div class="row"><div><label>Nom</label><input name="nom" required autocomplete="family-name"></div><div><label>Prénom</label><input name="prenom" required autocomplete="given-name"></div></div>
+<div class="row"><div><label>E-mail</label><input name="email" type="email" required autocomplete="email"></div><div><label>Téléphone</label><input name="phone" type="tel" autocomplete="tel"></div></div>
+<div class="row"><div><label>Mot de passe (8 caractères min.)</label><input name="password" type="password" minlength="8" required autocomplete="new-password"></div><div><label>Confirmation</label><input name="confirm" type="password" required autocomplete="new-password"></div></div>
+<label><input type="checkbox" name="consent" style="width:auto" required> J'accepte la <a href="#/infos" style="text-decoration:underline">politique de confidentialité</a></label>
+<p class="np">Seules les données nécessaires sont collectées. Aucune donnée de carte bancaire n'est demandée.</p>
+<div><button class="btn">Créer mon compte</button></div><div class="msg" id="rgm" role="status"></div></form></div></div></section>
+</div>
+</main>
+<footer><div class="w"><div class="c"><div><div class="logo"><span>Morskaya Feeria</span><small>Complexe hôtelier</small></div></div>
+<div><h3>Contact</h3><a href="#/contact" id="fa">Adresse</a><a id="fp" href="#/contact">Téléphone</a><a id="fe" href="#/contact">E-mail</a></div>
+<div><h3>Hébergement</h3><a href="#/chambres">Appartements et tarifs</a><a href="#/reservation">Réservations</a><a href="#/connexion">Mon compte</a></div>
+<div><h3>Services</h3><a href="#/visite">Restaurant</a><a href="#/visite">Piscines</a><a href="#/infos">Règlement et FAQ</a><a class="btn" href="#/reservation">Réserver un appartement</a></div></div>
+<div class="leg"><span>© 2026 Morskaya Feeria</span><span><a href="#/infos" style="display:inline">Politique de confidentialité</a> · <a href="#/infos" style="display:inline">Conditions de réservation</a></span></div></div></footer>
+<div id="lb"><button id="lx" style="top:10px;right:20px" aria-label="Fermer">×</button><button id="lp" style="left:20px" aria-label="Précédent">‹</button><img alt=""><button id="ln" style="right:20px" aria-label="Suivant">›</button></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+/* CONFIGURATION : renseignez vos valeurs ici (ancien config.js) */
+window.MF_CONFIG={SUPABASE_URL:"",SUPABASE_ANON_KEY:"",ADDRESS:"",PHONE:"",EMAIL:"",MAP_EMBED_URL:"",DIRECTIONS_URL:"",INSTAGRAM_URL:"",
+PRICES:{lux:0,deluxe:0,family:0,loft:0},CURRENCY:"FCFA",DEPOSIT_RATE:0.3,EXPIRY_HOURS:24,CHECKIN_TIME:"14h",CHECKOUT_TIME:"12h"};
+</script>
+<script>
+let PRE=null;const C=window.MF_CONFIG||{},NIL=document.createElement("div"),$=s=>document.querySelector(s)||NIL,$$=s=>[...document.querySelectorAll(s)];
+const sb=(window.supabase&&C.SUPABASE_URL&&C.SUPABASE_ANON_KEY)?supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY):null;
+const APTS=[["lux","Luxe",2,1,["Wi-Fi","Climatisation","Salle de bain","Télévision"]],["deluxe","Deluxe",2,1,["Wi-Fi","Climatisation","Cuisine équipée","Télévision"]],["family","Familial",4,2,["Wi-Fi","Cuisine équipée","Climatisation","Espace familial"]],["loft","Loft",4,2,["Wi-Fi","Cuisine équipée","Salon","Climatisation"]]];
+const ADV=["Plage privée","Trois piscines","Aire de jeux","Espaces barbecue","Location de vélos","Territoire aménagé","Vidéosurveillance","Parking"];
+const REV=[["Client 1","Tripadvisor","Un séjour agréable dans un cadre reposant."],["Client 2","Tripadvisor","Un bel endroit pour profiter de vacances en famille."],["Client 3","Avis clients","Un cadre confortable avec de belles installations."]];
+const RATE=C.DEPOSIT_RATE??.3,HRS=C.EXPIRY_HOURS??24,CUR=C.CURRENCY||"FCFA",PR=C.PRICES||{};
+const fmt=n=>Math.round(n).toLocaleString("fr-FR")+" "+CUR,nights=(i,o)=>Math.round((new Date(o)-new Date(i))/864e5);
+const price=k=>PR[k]?`<strong>${fmt(PR[k])}</strong> / nuit`:"Tarif sur demande";
+const capErr=f=>{const a=APTS.find(x=>x[0]==f.apartment.value);return a&&(+f.adults.value)+(+f.children.value)>a[2]?"Ce logement accueille "+a[2]+" personnes maximum.":""};
+const img=(s,a="")=>`<img loading="lazy" src="assets/${s}.jpg" alt="${a}" onerror="this.style.visibility='hidden'">`;
+$("#adv").innerHTML=ADV.map(t=>`<div><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12l3 3 5-6"/></svg><br>${t}</div>`).join("");
+$("#apts").innerHTML=APTS.map(a=>`<article class="card" id="apt-${a[0]}"><div class="im2">${img("apartment-"+a[0],a[1])}<h3>${a[1]}</h3></div><small>${a[2]} pers. · ${a[3]} chambre(s)</small><p class="pr">${price(a[0])}</p><p>${a[4].join(", ")}</p>
+<div class="a"><button class="btn d" data-d="${a[0]}">Voir les détails</button><button class="btn" data-b="${a[0]}">Réserver</button></div><p class="dt" hidden></p></article>`).join("");
+$("[name=apartment]").innerHTML='<option value="">Choisir…</option>'+APTS.map(a=>`<option value="${a[0]}">${a[1]} (max ${a[2]} pers.)</option>`).join("");
+$("#apts").onclick=e=>{const d=e.target.dataset;if(d.b){PRE={apartment:d.b};location.hash="#/reservation"}
+ if(d.d){const p=e.target.closest("article").querySelector(".dt"),a=APTS.find(x=>x[0]==d.d);p.textContent=`Capacité ${a[2]} personnes, ${a[3]} chambre(s). Équipements : ${a[4].join(", ")}. Tarif : ${price(a[0]).replace(/<[^>]+>/g,"")}.`;p.hidden=!p.hidden}};
+const gal=(id,pre,n)=>$(id).innerHTML=Array.from({length:n},(_,i)=>`<a>${img(pre+(i+1),"")}</a>`).join("");
+$("#fg").innerHTML=["beach","pool","sea-view","family-swimming"].map(s=>`<a>${img(s,s)}</a>`).join("");gal("#sg","social-",4);gal("#gg","gallery-",6);
+$$("#gg a:nth-child(n+5)").forEach(a=>a.hidden=true);$("#all").onclick=()=>{$$("#gg a").forEach(a=>a.hidden=false);$("#all").remove()};
+$("#bi").textContent=`Le prix et l'acompte (${Math.round(RATE*100)} % de l'hébergement) sont calculés automatiquement. La réservation est confirmée après règlement de l'acompte (paiement simulé dans cette version de démonstration).`;
+$("#rules").innerHTML=[`Arrivée à partir de ${C.CHECKIN_TIME||"14h"}, départ avant ${C.CHECKOUT_TIME||"12h"}`,"Respect du calme et des autres résidents","Capacité du logement à ne pas dépasser","Piscines : enfants sous la surveillance d'un adulte"].map(t=>`<li>${t}</li>`).join("");
+$(".x-dep").textContent=`L'acompte représente ${Math.round(RATE*100)} % de l'hébergement. Sans règlement sous ${HRS} h, la réservation expire et le logement est libéré ; le solde se règle ensuite en ligne ou à la réception.`;
+function recap(){const f=$("#bf"),a=APTS.find(x=>x[0]==f.apartment.value),n=nights(f.check_in.value,f.check_out.value),r=$("#rc");
+ if(!a||!(n>0)){r.textContent="";return}const p=PR[a[0]];
+ r.innerHTML=`${a[1]} · ${n} nuit(s)`+(p?`<br>Hébergement : ${fmt(n*p)}<br>Acompte à régler (${Math.round(RATE*100)} %) : <strong>${fmt(n*p*RATE)}</strong>`:"<br>Tarif communiqué par l'équipe.")}
+$("#bf").addEventListener("input",recap);$("#bf").addEventListener("change",recap);
+// Avis
+let ri=0;const rv=()=>{const r=REV[ri];$("#rev").innerHTML=`<div class="stars">★★★★★</div><q>${r[2]}</q><p>${r[0]} — ${r[1]}</p>`};rv();
+$("#rn").onclick=()=>{ri=(ri+1)%REV.length;rv()};$("#rp").onclick=()=>{ri=(ri+REV.length-1)%REV.length;rv()};
+// Lightbox
+let L=[],li=0;const sh=()=>{$("#lb img").src=L[li].src;$("#lb").classList.add("on")};
+document.addEventListener("click",e=>{const i=e.target.closest(".g a")?.querySelector("img");if(i){L=$$(".g img").filter(x=>x.closest("section")==i.closest("section")&&x.style.visibility!="hidden");li=L.indexOf(i);sh()}});
+document.addEventListener("keydown",e=>{if(!$("#lb").classList.contains("on"))return;if(e.key=="Escape")$("#lx").click();if(e.key=="ArrowRight")$("#ln").click();if(e.key=="ArrowLeft")$("#lp").click()});
+$("#lx").onclick=()=>$("#lb").classList.remove("on");$("#ln").onclick=()=>{li=(li+1)%L.length;sh()};$("#lp").onclick=()=>{li=(li+L.length-1)%L.length;sh()};
+$("#bt").onclick=()=>$("#nav").classList.toggle("on");$("#nav").onclick=()=>$("#nav").classList.remove("on");
+// Coordonnées
+$("#addr").textContent=C.ADDRESS||"Adresse exacte à renseigner dans config.js";
+$("#map").innerHTML=C.MAP_EMBED_URL?`<iframe loading="lazy" src="${C.MAP_EMBED_URL}" title="Carte"></iframe>`:'<div class="mapph">Carte non configurée : renseignez MAP_EMBED_URL dans config.js</div>';
+$("#dir").href=C.DIRECTIONS_URL||"#/contact";$("#ig").href=C.INSTAGRAM_URL||"#/visite";
+if(C.PHONE){$("#fp").href="tel:"+C.PHONE;$("#fp").textContent=C.PHONE}if(C.EMAIL){$("#fe").href="mailto:"+C.EMAIL;$("#fe").textContent=C.EMAIL}if(C.ADDRESS)$("#fa").textContent=C.ADDRESS;
+// Dates min
+const today=new Date().toISOString().slice(0,10);$$("input[type=date]").forEach(i=>i.min=today);
+const show=(el,t,ok)=>{el.className="msg "+(ok?"ok":"er");el.textContent=t};
+const ERR={invalid_dates:"Dates invalides (séjour de 1 à 60 nuits, à partir d'aujourd'hui).",unavailable:"Ce logement n'est plus disponible pour ces dates.",over_capacity:"Le nombre de personnes dépasse la capacité du logement.",rate_limited:"Trop de demandes récentes avec cet e-mail. Réessayez plus tard.",invalid_apartment:"Appartement invalide."};
+const errTxt=e=>{const m=(e.message||"");for(const k in ERR)if(m.includes(k))return ERR[k];return "Erreur technique. Réessayez ou contactez-nous."};
+const noDb=el=>{if(sb)return false;show(el,"Service de réservation non configuré (Supabase). Aucune demande n'a été enregistrée.",false);return true};
+// Recherche hero -> préremplit le formulaire et vérifie
+$("#sf").onsubmit=e=>{e.preventDefault();PRE=Object.fromEntries(new FormData(e.target));location.hash="#/reservation"};
+async function chk(){const f=$("#bf"),m=$("#bm");if(noDb(m))return;const i=f.check_in.value,o=f.check_out.value;
+ if(!i||!o||o<=i){show(m,"Choisissez une date de départ postérieure à l'arrivée.",false);return}
+ if(i<today){show(m,"La date d'arrivée ne peut pas être passée.",false);return}
+ const{data,error}=await sb.rpc("available_apartments",{p_in:i,p_out:o});if(error){show(m,errTxt(error),false);return}
+ [...f.apartment.options].forEach(op=>{if(op.value)op.disabled=!data.includes(op.value)});
+ show(m,data.length?"Disponibles : "+APTS.filter(a=>data.includes(a[0])).map(a=>a[1]).join(", ")+".":"Aucun logement disponible pour ces dates.",!!data.length)}
+$("#chk").onclick=chk;
+$("#bf").onsubmit=async e=>{e.preventDefault();const f=e.target,m=$("#bm");if(f.website.value)return;if(noDb(m))return;
+ if(!f.apartment.value||!f.name.value.trim()||!f.phone.value.trim()||!f.email.checkValidity()||!f.check_in.value||!f.check_out.value||!f.consent.checked){show(m,"Complétez tous les champs obligatoires, dont l'e-mail et le consentement.",false);return}
+ const ce=capErr(f);if(ce){show(m,ce,false);return}
+ if(f.check_out.value<=f.check_in.value||f.check_in.value<today){show(m,"Dates invalides : arrivée à partir d'aujourd'hui, départ après l'arrivée.",false);return}
+ const nn=nights(f.check_in.value,f.check_out.value),pp=PR[f.apartment.value],b=$("#bs");b.disabled=true;
+ const{data,error}=await sb.rpc("create_reservation",{p_apartment:f.apartment.value,p_in:f.check_in.value,p_out:f.check_out.value,p_adults:+f.adults.value,p_children:+f.children.value,p_rooms:+f.rooms.value,p_name:f.name.value,p_email:f.email.value,p_phone:f.phone.value,p_requests:f.requests.value||null});
+ b.disabled=false;if(error){show(m,errTxt(error),false);return}
+ const r=data[0];show(m,`Réservation n° ${r.number} enregistrée. Statut : en attente de paiement.`+(pp?` Acompte à régler : ${fmt(nn*pp*RATE)}.`:"")+` Sans règlement sous ${HRS} h, elle expire. Conservez ce numéro.`,true);f.reset();$("#rc").textContent=""};
+$("#cf").onsubmit=async e=>{e.preventDefault();const f=e.target,m=$("#cm");if(f.website.value)return;if(noDb(m))return;if(!f.consent.checked){show(m,"Le consentement est requis.",false);return}
+ const{error}=await sb.from("contact_messages").insert({name:f.name.value,email:f.email.value,phone:f.phone.value||null,message:"["+f.subject.value+"] "+f.message.value});
+ if(error){show(m,"Envoi impossible. Vérifiez les champs et réessayez.",false);return}show(m,"Votre message a bien été envoyé.",true);f.reset()};
+
+
+{const set=(id,t,h)=>{const e=$(id);if(e!==NIL){e.textContent=t;if(h)e.href=h}};
+set("#sa",C.ADDRESS||"Adresse à renseigner");if(C.PHONE)set("#sp",C.PHONE,"tel:"+C.PHONE);if(C.EMAIL)set("#se",C.EMAIL,"mailto:"+C.EMAIL);
+if(C.PHONE)set("#lph",C.PHONE,"tel:"+C.PHONE);if(C.EMAIL)set("#lem",C.EMAIL,"mailto:"+C.EMAIL);
+if($("#rev")!==NIL){const T=["Séjour agréable","Vacances en famille","Cadre confortable"];$("#rev").className="rev cards";$(".nav2").hidden=true;
+$("#rev").innerHTML=REV.map((r,i)=>`<article><h4>${T[i]}</h4><div class="stars">★★★★★</div><p>${r[2]}</p><div class="src">${r[1]} · ${r[0]}</div></article>`).join("")}}
+
+// Connexion
+async function st(){if(!sb)return;const{data}=await sb.auth.getSession(),u=data.session&&data.session.user;$("#who").hidden=!u;$("#lgf").hidden=!!u;$("#rgf").parentElement.hidden=!!u;if(u)$("#wm").textContent="Connecté : "+u.email}
+$("#lgf").onsubmit=async e=>{e.preventDefault();const f=e.target,m=$("#lgm");if(noDb(m))return;const{error}=await sb.auth.signInWithPassword({email:f.email.value,password:f.password.value});
+ if(error){show(m,"Identifiants incorrects ou compte non confirmé.",false);return}f.reset();show(m,"Connexion réussie.",true);st()};
+$("#rgf").onsubmit=async e=>{e.preventDefault();const f=e.target,m=$("#rgm");if(noDb(m))return;
+ if(f.password.value.length<8){show(m,"Mot de passe : 8 caractères minimum.",false);return}
+ if(f.password.value!==f.confirm.value){show(m,"Les mots de passe ne correspondent pas.",false);return}
+ if(!f.consent.checked){show(m,"Le consentement est requis.",false);return}
+ const{error}=await sb.auth.signUp({email:f.email.value,password:f.password.value,options:{data:{nom:f.nom.value,prenom:f.prenom.value,telephone:f.phone.value}}});
+ if(error){show(m,"Inscription impossible. Vérifiez les champs ou connectez-vous.",false);return}f.reset();show(m,"Compte créé. Vérifiez votre e-mail si une confirmation est demandée.",true);st()};
+$("#out").onclick=async()=>{await sb.auth.signOut();st()};st();
+
+// Routeur (une page à la fois, sans rechargement)
+const TT={accueil:"Hôtel en bord de mer",chambres:"Chambres et tarifs",visite:"Visite de l'hôtel",reservation:"Réservation",infos:"Informations et services",contact:"Contact",connexion:"Connexion"};
+function route(){let n=(location.hash.match(/^#\/(\w+)/)||[])[1];if(!TT[n])n="accueil";
+ $$(".page").forEach(p=>p.classList.toggle("on",p.id=="p-"+n));
+ $$("nav a[href^='#/']").forEach(a=>a.getAttribute("href")=="#/"+n?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+ document.title=TT[n]+" | Morskaya Feeria";scrollTo({top:0,behavior:"instant"});
+ if(n=="reservation"&&PRE){const f=$("#bf");for(const k in PRE)if(k!="website"&&f[k])f[k].value=PRE[k];recap();if(PRE.check_in&&PRE.check_out)chk();PRE=null}
+ if(n=="connexion")st()}
+addEventListener("hashchange",route);route();
+</script></body></html>
